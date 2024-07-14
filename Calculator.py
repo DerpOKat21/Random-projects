@@ -23,10 +23,11 @@ class Calculator:
             button = tk.Button(master, text=button_text, width=5, height=2, font=('Arial', 14),
             command=lambda x=button_text: self.button_click(x))
             button.grid(row=row, column=col, padx=5, pady=5)
-            if col > 3:
+            if col == 3:
                 col = 0
                 row += 1
-
+            else:
+                col += 1
             # Bind keyboard keys
             self.master.bind('<Key>', self.key_press)
 
