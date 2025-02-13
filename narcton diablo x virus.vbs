@@ -1,0 +1,1 @@
+MsgBox "Narcton Diablo X", , "Narcton Diablo X"
